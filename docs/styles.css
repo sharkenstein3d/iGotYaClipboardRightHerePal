@@ -1,0 +1,103 @@
+/* Reset some default styles */
+body, h1, h2, p, ol, ul, li, code, blockquote, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif; /* Hip font for body */
+    background-image: url('./wizardbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6); /* Partially transparent black overlay */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Fuzzy shadow for text */
+}
+
+h1 {
+    font-family: 'Nova Square', sans-serif; /* Use Nova Square font for h1 */
+    font-size: 48px; /* Set font size to 48px */
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Nova Square', sans-serif; /* Use Nova Square font for h2 */
+    font-size: 48px; /* Set font size to 48px */
+    color: #ff4500;
+    margin-top: 20px;
+}
+
+p {
+    font-family: 'Impact', sans-serif; /* Use Impact font for body text */
+    font-size: 20px; /* Make it a little bigger */
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 10px;
+}
+
+ol {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+ol div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    text-align: left;
+}
+
+ol div::before {
+    content: "🌟";
+    font-size: 24px;
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+    background-color: #f7f7f7;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+blockquote {
+    background-color: rgba(255, 69, 0, 0.7); /* Partially transparent orange background */
+    color: #fff;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+footer {
+    font-size: 14px;
+    margin-top: 30px;
+    color: #777;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.step {
+    background-color: rgba(0, 0, 0, 0.8); /* Partially transparent black background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Add more styles here for the layout */
